@@ -7,6 +7,8 @@
     <script src="aframe/aframe.js"></script>
   </head>
   <body>
+        <p>Click the button to change the src attribute in the iframe.</p>
+    <button onclick="myFunction()">Change</button>
     <a-scene>
       <a-assets>
         <video id="video" src="test_1.mp4"
@@ -15,9 +17,7 @@
 
       <a-videosphere src="#video" rotation="0 180 0"></a-videosphere>
     </a-scene>
-    <p>Click the button to change the src attribute in the iframe.</p>
 
-<button onclick="myFunction()">Change</button>
     <script>
       function myFunction() {
         document.getElementById("video").src = "test_2.mp4";
