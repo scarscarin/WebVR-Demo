@@ -7,15 +7,16 @@
     <script src="aframe/aframe.js"></script>
   </head>
   <body>
-    <a-scene>
-      <a-assets>
-        <video onclick="myFunction()" id="video" src="test_1.mp4"
-               autoplay loop crossorigin></video>
-      </a-assets>
+    <div onclick="myFunction()" class="box">
+      <a-scene>
+        <a-assets>
+          <video id="video" src="test_1.mp4"
+                 autoplay loop crossorigin></video>
+        </a-assets>
 
-      <a-videosphere src="#video" rotation="0 180 0"></a-videosphere>
-    </a-scene>
-
+        <a-videosphere src="#video" rotation="0 180 0"></a-videosphere>
+      </a-scene>
+    </div>
     <script>
       function myFunction() {
         document.getElementById("video").src = "test_2.mp4";
