@@ -15,5 +15,13 @@
 
       <a-videosphere src="#video" rotation="0 180 0"></a-videosphere>
     </a-scene>
+    <p>Click the button to change the src attribute in the iframe.</p>
+
+<button onclick="myFunction()">Change</button>
+    <script>
+      function myFunction() {
+        document.getElementById("video").src = "test_2.mp4";
+      }
+    </script>
   </body>
 </html>
